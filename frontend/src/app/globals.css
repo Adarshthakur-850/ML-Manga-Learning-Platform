@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #050510;
+  --color-foreground: #ededed;
+  
+  --color-neon-blue: #00f3ff;
+  --color-neon-pink: #ff00ea;
+  --color-neon-purple: #b500ff;
+  --color-card-bg: rgba(15, 15, 30, 0.8);
+  --color-panel-bg: #111116;
+}
+
+:root {
+  --background: #050510;
+  --foreground: #ededed;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+/* Custom Manga Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050510; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 243, 255, 0.5); 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f3ff; 
+}
